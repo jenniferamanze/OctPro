@@ -1,0 +1,57 @@
+/* Basic auth card styles (beginner-friendly) */
+.auth-card {
+	width: 100%;
+	max-width: 420px;
+	background: #ffffff;
+	border-radius: var(--radius);
+	padding: 28px;
+	box-shadow: 0 6px 18px rgba(3, 43, 68, 0.08);
+}
+
+.auth-logo-section {
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.auth-logo {
+	width: 72px;
+	height: auto;
+	display: block;
+	margin: 0 auto 8px auto;
+}
+
+.auth-tabs {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+.auth-tabs button {
+	padding: 8px 14px;
+	border-radius: 8px;
+	background: transparent;
+	color: var(--text-light);
+	border: 1px solid transparent;
+}
+
+.auth-tabs button.active {
+	background: var(--primary-color);
+	color: #fff;
+	border-color: var(--primary-color);
+}
+
+.auth-form .input-group { margin-bottom: 14px; }
+.auth-form label { display: block; margin-bottom: 6px; color: var(--text-light); font-weight: 600; }
+
+.auth-buttons { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; }
+.next-btn { background: var(--primary-color); color: #fff; padding: 10px 14px; border-radius: 8px; }
+.help-btn { background: transparent; color: var(--primary-color); padding: 10px 14px; border-radius: 8px; }
+
+.auth-footer { font-size: 13px; color: var(--text-light); text-align: center; margin-top: 18px; }
+
+@media (max-width: 480px) {
+	.auth-card { padding: 18px; }
+	.auth-tabs button { padding: 7px 10px; font-size: 14px; }
+}
+

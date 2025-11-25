@@ -27,18 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		signupTab.addEventListener('click', showSignup);
 	}
 
-	// Simple demo handlers so beginner user sees actions (prevent real submit)
 	if (loginForm) {
 		loginForm.addEventListener('submit', function (e) {
 			e.preventDefault();
-			alert('Login submitted (demo)');
+			window.location.href = 'components/dashboard/dashboard.html';
 		});
 	}
 
 	if (signupForm) {
 		signupForm.addEventListener('submit', function (e) {
 			e.preventDefault();
-			alert('Signup submitted (demo)');
+			alert('Account created! Redirecting to dashboard...');
+			setTimeout(function () {
+				window.location.href = 'components/dashboard/dashboard.html';
+			}, 1000);
 		});
 	}
 });

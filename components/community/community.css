@@ -1,0 +1,33 @@
+/* Community page styles */
+
+.header-card { padding: 14px 18px; margin-bottom: 18px; }
+.card-title { display:flex; gap:12px; align-items:center; }
+.title-icon { width:44px; height:44px; background:#e8f0ff; color:var(--primary-color); display:flex; align-items:center; justify-content:center; border-radius:8px; font-size:18px; }
+
+.post-composer { display:flex; gap:12px; padding:14px; align-items:flex-start; }
+.composer-left { width:56px; }
+.composer-avatar { width:44px; height:44px; background:#4a90ff; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:600; }
+.composer-right { flex:1; }
+.post-composer textarea { width:100%; padding:12px; border-radius:8px; border:1px solid var(--grey-color); resize:vertical; font-size:14px; }
+.composer-actions { display:flex; justify-content:flex-end; gap:8px; margin-top:8px; }
+.btn-secondary { background:#f0f0f0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+.add-task-btn { background:#2468ff; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
+
+.posts-panel { padding:18px; min-height:200px; }
+.empty-box { text-align:center; color:var(--text-light); border: 1px dashed #e9eefc; padding: 28px; border-radius:8px; background: linear-gradient(180deg, rgba(240,244,255,0.45), rgba(255,255,255,0)); }
+.empty-icon { font-size:28px; margin-bottom:8px; }
+
+.post-card { background:#fff; border-radius:10px; padding:12px; margin-bottom:12px; border:1px solid #f0f3ff; display:flex; gap:12px; }
+.post-meta { display:flex; flex-direction:column; }
+.post-header { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.post-author { font-weight:700; color:var(--text-dark); }
+.post-time { color:var(--text-light); font-size:12px; }
+.post-body { margin-top:8px; color:var(--text-dark); }
+.post-actions { margin-left:auto; display:flex; gap:8px; align-items:center; }
+.post-avatar { width:44px; height:44px; border-radius:50%; background:#4a90ff; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:600; }
+
+/* responsive */
+@media (max-width: 768px) {
+  .post-composer { padding:10px; }
+  .posts-panel { padding:12px; }
+}

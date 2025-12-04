@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community - TaskMaster</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="community.css">
+</head>
+<body class="dashboard-layout">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo-box">✓</div>
+      <h3>TaskMaster</h3>
+    </div>
+
+    <div class="user-profile">
+      <div class="user-avatar">J</div>
+      <div class="user-info">
+        <p class="user-name">Jennifer</p>
+        <p class="user-email">jennifranc18@gmail.com</p>
+      </div>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a href="../dashboard/dashboard.html" class="menu-item">
+        <span class="menu-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="../tasks/tasks.html" class="menu-item">
+        <span class="menu-icon">✓</span>
+        <span>Tasks</span>
+      </a>
+      <a href="#" class="menu-item active">
+        <span class="menu-icon">👥</span>
+        <span>Community</span>
+      </a>
+      <a href="../expenses/expenses.html" class="menu-item">
+        <span class="menu-icon">💰</span>
+        <span>Expenses</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="menu-icon">📝</span>
+        <span>Notes</span>
+      </a>
+      <a href="#" class="menu-item">
+        <span class="menu-icon">⚙️</span>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <button class="logout-btn" id="logoutBtn">🚪 Logout</button>
+  </aside>
+
+  <main class="main-content">
+    <div class="card header-card">
+      <div class="card-title">
+        <div class="title-icon">👥</div>
+        <div>
+          <h2>Community Board</h2>
+          <p class="muted">Collaborate with your team</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="card post-composer">
+      <div class="composer-left">
+        <div class="composer-avatar">J</div>
+      </div>
+      <div class="composer-right">
+        <form id="postForm">
+          <textarea id="postText" placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)" rows="3"></textarea>
+          <div class="composer-actions">
+            <button type="button" id="attachBtn" class="btn-secondary">📎</button>
+            <button type="submit" id="postBtn" class="add-task-btn">Post</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="card posts-panel">
+      <div id="postsContainer">
+        <div id="emptyPosts" class="empty-box">
+          <div class="empty-icon">💬</div>
+          <p class="muted">No posts yet. Be the first to share something!</p>
+        </div>
+        <!-- Posts will be injected here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="../../assets/js/global.js"></script>
+  <script src="community.js"></script>
+</body>
+</html>
